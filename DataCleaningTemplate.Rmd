@@ -5,7 +5,7 @@ output:
     highlight: espresso
     theme: spacelab
 author: "Your Name Here"
-date: 'Last compiled: `r format(Sys.time(), "%B %d, %Y")`'
+date: 'Last compiled: `r format(Sys.time(), "%B %d, %Y at %X")`'
 bibliography: 
   - packages.bib
   - bmiL.bib
@@ -65,11 +65,11 @@ Please use the following conversion factors with this project: 0.453592 kilos pe
 For example, a male who weighs 185 pounds and is 71 inches tall has a weight of 83.91 kg and a height of 1.8034 m.
 
 \begin{equation}
-185 \text{ pounds} \times \frac{0.453592 \text{ kg}}{\text{pounds}} = `r 185*0.453592` \text{ kg}
+185 \text{ pounds} \times \frac{0.453592 \text{ kg}}{\text{pounds}} = `r round(185*0.453592,4)` \text{ kg}
 \end{equation}
 
 \begin{equation}
-71 \text{ inches} \times \frac{2.54 \text{ cm}}{\text{inches}}\times \frac{1 \text {m}}{100 \text{ cm}} = `r 71*2.54/100` \text{ m}
+71 \text{ inches} \times \frac{2.54 \text{ cm}}{\text{inches}}\times \frac{1 \text {m}}{100 \text{ cm}} = `r round(71*2.54/100,4)` \text{ m}
 \end{equation}
 
 </div>
